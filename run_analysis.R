@@ -80,4 +80,4 @@ clean_data <- group_by(clean_data,actname,subject_nb)
 summarised_data <- summarise_all(clean_data,mean)
 
 # exporting the data
-write.table(summarised_dat,file = "galaxy_watch_data.txt")
+write.table(summarised_data,file = "galaxy_watch_data.txt",row.name=FALSE)
