@@ -28,7 +28,21 @@ data1 <- cbind(subjects,Xtest)
 
 #adding the name of activity insteade of it's code number  
 #for this we need to create a new funtion "activity_name"
+activity_name <- function(n) {
+        i <- 1
+        data <- c(NULL)
+        for (i in 1:length(n)) {
+        if (n[i] == "1" ) { data[i] <- "WALKING"}
+        if (n[i] == "2" ) { data[i] <- "WALKING_UPSTAIRS"}
+        if (n[i] == "3" ) { data[i] <- "WALKING_DOWNSTAIRS"}
+        if (n[i] == "4" ) { data[i] <- "SITTING"}
+        if (n[i] == "5" ) { data[i] <- "STANDING"}
+        if (n[i] == "6" ) { data[i] <- "LAYING"} 
+                }
+        return (data)
+}
 
+# we use the new function activity name to make the data more understandable 
 actname <- activity_name(Training_labels$V1)
 data2 <- cbind(actname, data1)
 #now the test data is ready to use 
