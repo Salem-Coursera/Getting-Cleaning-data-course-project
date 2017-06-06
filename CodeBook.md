@@ -12,7 +12,7 @@ subject_nb :the volunteer number each person had a number from 1 to 30
 the collected data :
 from the original data "Human Activity Recognition Using Smartphones Dataset Version 1.0"
 we chosed to calculate the avrage of numbers  obtained in each activity for each volunteer
-row accelerometer and gyroscope dat mesuring the mean :
+# row accelerometer and gyroscope dat mesuring the mean :
 "tBodyAcc.mean...X"
 "tBodyAcc.mean...Y"
 "tBodyAcc.mean...Z"
@@ -66,7 +66,7 @@ row accelerometer and gyroscope dat mesuring the mean :
 "angle.X.gravityMean."
 "angle.Y.gravityMean."
 "angle.Z.gravityMean."
-row accelerometer and gyroscope dat mesuring the standard deviation :
+# row accelerometer and gyroscope dat mesuring the standard deviation :
 "tBodyAcc.std...X"
 "tBodyAcc.std...Y"
 "tBodyAcc.std...Z"
